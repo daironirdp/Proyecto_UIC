@@ -1,0 +1,500 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 11, 2020, 11:14:42 AM
+    Author     : Dairon
+*/
+$texto:#111111;
+$morado:rgb(101, 8, 129);//morado
+$blanco:#fff;//blanco
+$secundario:#555;;//
+$negro:#333;//negro
+$gris:rgba(255,255,255,.5);
+html {
+    font-size: 15px; }
+body{
+    background-color: azure;
+}
+//botones adicionar
+#adicionar{
+    color: blueviolet;
+}
+// bloque donde aparece el contenido 
+#contenido{
+    margin-bottom: 130px;
+    margin-top: 200px;
+}
+
+#cabecera{
+    background-color: $morado;
+    color: $blanco;
+
+}
+#cabecera h1{
+    font-size: 2.8rem
+}
+
+#contenedorMenu{
+    background-color: $negro;
+    border-top: 0.5px solid $gris;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#separador{
+    color:$blanco;
+}
+.sesion{
+    font-size: 1.5rem;
+    color: red;
+    flex: .1 1 0;
+    display: flex;
+    order: 3;
+    margin-right: 30px;
+}
+#cerrarSesion{
+
+    text-decoration: none;
+    color: red;
+    margin-left: 20px
+}
+#menu{
+    flex: 1 1 100%;
+    text-align: center;    
+}
+#menu ul{
+    list-style: none;
+    padding: 0px;
+}
+#menu nav ul li a{
+    text-decoration: none;
+    color: $gris;
+    font-size: 1.2rem;
+}
+
+#menu nav ul li {
+    border-top: 1px solid dimgray;
+    padding-top: 0.5rem;
+}
+
+
+.active a{
+    color: white !important;
+}
+#boton-menu{
+    color: white;
+    background: transparent;
+    border: none;
+    margin-left: auto;
+    margin-right: 15px;
+    font-size: 2rem;
+}
+#labelMenu{
+    color: dimgrey;
+    margin-left: 10px; 
+}
+
+#usuarioSA{  
+    text-decoration: none;
+    color: dimgrey
+}
+#usuarioA{  
+    text-decoration: none;
+    color: green;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+//Hasta aki estilos del menu
+
+//Ahora estilos restantes
+
+//Estilo de las tablas
+.contenedortabla{
+
+    text-align: center;
+}
+
+.contenedortabla th{
+    text-align: center;
+}
+
+//Estilos de la pagina registrar
+#registrar{
+    background-color: $negro;
+    margin-bottom: 10px;
+    color: $blanco;
+
+
+}
+#encabezado_form {
+    margin-bottom: 20px;
+}
+
+//Estilos de la pagina usuarios
+.contenedortabla tbody{
+    background-color: $negro;
+    color: $blanco;
+
+}
+.contenedortabla thead{
+    background-color: $morado;
+    color: $blanco;
+}
+.table-hover>tbody>tr:hover>td, .table-hover>tbody>tr:hover>th{
+    background-color: grey;
+
+}
+//Estilos de la pagina noticias
+#contenedorFlexibleModifNews{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#imagen_cargar{
+   width: 0.1px;
+    height: 0.1px;
+    overflow:hidden;
+    position: absolute;
+    opacity:0;
+    z-index: -1;
+}
+.cargo{
+    font-size: 14px;
+    font-weight: 600;
+    background-color:blueviolet ;
+    display: inline-block;
+    transition: all .5s;
+    cursor: pointer;
+    padding: 2px 15px;
+    text-transform: uppercase;
+    width: fit-content;
+   text-align: center;
+   border-radius: 5px;
+    
+}
+.fecha_flex{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+
+}
+.contenedor_noticias_comentarios_quejas{
+    background-color: $morado;
+    color: $blanco;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.botones_noticias{
+    text-align: left;
+}
+#adicionar:hover, #adicionar:focus {
+    text-decoration: none; 
+}
+
+.noticias p{
+    text-align: justify;
+}
+.fecha_noticia{
+    text-align: end;
+    padding-right: 10px;
+
+}
+.contenedor_noticias_comentarios_quejas header h4{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.noticias{
+    background-color:$negro;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-around;
+
+}
+.noticias figure{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.noticias figure img{
+    width: 100%;
+    border-radius: 5px;
+}
+.noticias figure figcaption{
+    text-align: center;
+    font-size: .8rem;
+}
+
+//Estilos de la pagina Comentarios
+.contenedor_noticias_comentarios_quejas .comentarios_quejas{
+    padding-left: 10px;
+
+}
+
+.icono_user{
+    font-size: 2rem;
+    margin-left: 5px;
+}
+
+.contenedor_noticias_comentarios_quejas .comentarios_quejas label{
+    font-size: .9rem;
+
+}
+.contenedor_noticias_comentarios_quejas .botones_comentarios_quejas{
+
+    text-align: center;
+}
+
+.comentYquejas{
+    background-color: $negro;
+    padding-top: 10px;
+}
+.comentYquejas p{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+}
+//Estilos de Inicio
+//contiene los objetivos
+#contenedorObjetivos{
+    display: flex;
+    flex-wrap: wrap;
+    //flex-direction: column;
+    justify-content: center;
+
+} 
+//representa a todos los objetivos
+.objetivos{
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+.obj{
+    background-color: $negro;
+    width:280px;//95%; //280px;
+    height:160px;//95%; //160px;
+    border-radius: 5px;
+}
+.obj p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+//centra los textos
+.centertext{
+    text-align: center;
+}
+//para adicionar
+.adicionar {
+    text-align: right;
+    font-size: 3rem;
+}
+
+
+//Estilos modales
+.anchopadre{
+    width: 80%;
+}
+.modal{
+    color:$blanco;
+}
+.modal-header{
+    background-color:$morado;
+
+}
+.modal-body{
+
+    background-color:$negro;
+
+}
+.close{
+    color: white;
+    opacity: 1;
+}
+//Estilos de footer
+footer{
+    // display: none;
+    background-color:$negro !important;
+    color: dimgrey !important;
+    text-align: center;
+    font-size: .8rem;
+}
+footer ul li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+footer ul{
+    display: flex;
+    justify-content:center;
+}
+footer ul li a{
+    color: dimgrey;
+    margin-right: 10px;
+
+}
+
+//botones
+.btn-primary {
+    color: black;
+    background-color: blueviolet;
+    border-color: #357ebd;
+    border-color: black;
+}
+
+//animaciones
+#menu ul li:hover a{
+    color: $blanco;
+
+}
+
+#usuarioSA:hover{
+    color: $blanco;
+
+}
+
+.redesSociales :hover{
+    text-decoration: none;
+    color: white;
+
+}
+//Medias querys
+@media only screen and (min-width: 538px) and (max-width: 1500px) {
+    #cabecera h1{
+        font-size: 2rem
+    }
+
+    #contenedorFlexibleModifNews figure,
+    #contenedorFlexibleModifNews table{
+        flex: 1 1 0px;
+    }
+
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1500px) {
+    #boton-menu{
+        display: none;
+    }
+    #labelMenu{
+        order: 1;
+        flex: .1 1 0;
+    }
+    #menu{
+        display: block;
+        order: 2;
+        flex: 3 1 0;
+        text-align: center; 
+
+
+    }
+
+    #menu nav ul li {
+        border-top: none;
+
+    }
+    #menu nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+
+    .noticias figure{  
+        width: 45%;
+    }
+    .noticias p{
+        width: 50%;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 200px) and (max-width: 538px) {
+    #cabecera h1,.seccion h1{
+        font-size: 1.5rem
+    }
+
+    #cabecera h1{
+        font-size: 1.3rem
+    }
+    #imagenLogo{
+        width:  90px;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 539px) and (max-width: 770px) {
+    .seccion h1{
+        font-size: 1.5rem
+    }
+
+    #contenido{
+        margin-top: 250px;
+
+    }
+    #contenedorFlexibleModifNews{
+        display: flex;
+        flex-wrap: nowrap;
+
+    }
+
+
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 900px) {
+
+
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1500px) {
+
+    .sesion{
+        flex: .55 1 0;
+
+    }
+
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1500px) {
+    .contenedor_noticias_comentarios_quejas header h4{
+        font-size: 2rem;
+
+    }
+
+    #registrar{
+        width: 50%;
+    }
+    .icono_user{
+        font-size: 3rem;
+        margin-left: 5px;
+    }
+
+    .contenedor_noticias_comentarios_quejas .comentarios_quejas label{
+        font-size: 1.3rem;
+
+    }
+
+}
